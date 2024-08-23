@@ -73,7 +73,7 @@
                       </p>
                 </div>
 
-    <% if(currUser && currUser._id.equals(listing.owner._id)) { %>
+    <% if(locals.currUser && locals.currUser._id.equals(listing.owner._id)) { %>
                 <form class="mb-3" method="POST" action="/listings/<%= listing._id %>/reviews/<%= review._id %>?_method=DELETE">
                     <button class="btn btn-sm btn-dark">Delete</button>
                 </form>
