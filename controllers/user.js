@@ -1,3 +1,4 @@
+let User = require("../Models/user.js")
 module.exports.renderSignupForm = (req, res) => {
   res.render("users/signup.ejs");
 };
