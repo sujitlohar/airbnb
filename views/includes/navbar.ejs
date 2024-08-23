@@ -31,10 +31,10 @@
       </div>
 
       <div class="navbar-nav ms-auto">
-        <% if(!locals.currUser) { %>
+        <% if(!currUser) { %>
         <a class="nav-link" href="/signup"><b>Sign Up</b></a>
         <a class="nav-link" href="/login"><b>Log In</b></a>
-        <% } %> <% if(locals.currUser) { %>
+        <% } %> <% if(currUser) { %>
         <a class="nav-link" href="/logout">Logout</a>
         <% } %>
       </div>
